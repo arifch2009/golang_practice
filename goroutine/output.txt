@@ -1,0 +1,14 @@
+channel1.go
+channel2.go
+channel3.go
+channel4.go
+channel.go
+mutex1.go
+output.txt
+problem1.go
+problem2.go
+simple1.go
+simple.go
+simple.go.save
+temp1
+temp2

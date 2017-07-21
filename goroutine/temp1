@@ -1,0 +1,54 @@
+
+package main
+
+import (
+  "fmt"
+  "time"
+
+
+)
+
+
+
+func main() {
+  
+
+  a := [3]int{0, 0, 0}
+ 
+
+  var i,j int
+  for i=0;i<3;i++ {
+   go func(i int)  {
+
+        fmt.Println(i, "is downloading")
+        time.Sleep(time.Second * 2)
+        fmt.Println(i, "is downloaded")
+
+        a[i]=1
+    }(i)
+  }
+   
+   for j=0;j<3;j++ {
+             
+
+       for a[j]==0 {
+
+        }
+       fmt.Println(j, "is extracting")
+       time.Sleep(time.Second * 5)
+       fmt.Println(j,  "is extracted")
+       
+
+    }
+
+
+
+
+
+ 
+}
+
+
+
+
+

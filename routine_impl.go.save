@@ -1,0 +1,32 @@
+package main
+
+
+
+import "fmt"
+
+
+func print_num1()  {
+
+	var i int
+        for i=1;i<5;i++ {
+		fmt.Println(i)
+	}
+}
+
+func print_num2() {
+	var i int
+	for i=1;i<5;i++ {
+		fmt.Println(i+10)
+	}
+
+}
+
+func main(){
+	fmt.Println("Go routine program")
+	go print_num1()
+	r input string
+	fmt.Scanln(&input)
+	fmt.Println("done")
+}
+
+

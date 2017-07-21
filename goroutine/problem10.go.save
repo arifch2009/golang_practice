@@ -1,0 +1,3 @@
+func doSomething(s string) {
+  fmt.Println("doing something", s)
+}
